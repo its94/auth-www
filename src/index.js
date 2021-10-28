@@ -14,11 +14,9 @@ const theme = extendTheme({
   },
 });
 
-console.log(process.env)
 const appId = process.env.REACT_APP_MORALIS_ID;
 const serverUrl = process.env.REACT_APP_SERVER_URL;
-// const appId = "gK5aTfHzQR1nR6nrS5lO9evI6Byx6kpfnvJ8W9Hi";
-// const serverUrl = "https://2srttozxlrdh.bigmoralis.com:2053/server";
+
 
 ReactDOM.render(
   <React.StrictMode>
