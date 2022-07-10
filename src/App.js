@@ -20,14 +20,14 @@ function App() {
   return (
     <Container>
       <Flex my={6}>
-        <Link to="/"><Heading>Home</Heading></Link>
+        <Link to="/"><Heading>Home</>VRMC></Link>
         <Spacer />
         {isAuthenticated && <Link to="/profile"> <Avatar name={user.attributes.username} /></Link>}
         {isAuthenticated && <Button onClick={() => {logout()}} ml={3}>Logout</Button>}
 
       </Flex>
       <Heading margin={45} mb={6}>
-        Welcome to Dapp Auth, {user ? user.attributes.username : "Please Login...."}
+        Welcome, {user ? user.attributes.username : "Please Login...."}
       </Heading>
 
       {isAuthenticated ? (
